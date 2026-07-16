@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LanguageButton } from "./components/LanguageButton";
 import { LanguageCard } from "./components/LanguageCard";
 import { languages } from "./data/languages";
+import "./App.css";
 
 export const App = () => {
   const [activeLanguage, setActiveLanguage] = useState(languages[0]);
