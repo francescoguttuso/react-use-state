@@ -1,3 +1,5 @@
+import "./LanguageCard.css";
+
 export const LanguageCard = (props) => {
     return (
         <div className="card-details">

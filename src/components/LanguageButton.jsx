@@ -1,3 +1,5 @@
+import "./LanguageButton.css";
+
 export const LanguageButton = (props) => {
     return (
         <button
