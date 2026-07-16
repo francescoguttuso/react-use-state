@@ -1,7 +1,17 @@
 button {
     color: white;
-    background-color: #2555f5;
+    background-color: #007bff;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+
+
+}
+
+.btn-active {
+    background-color: #ffc107;
+    color: black;
 }
