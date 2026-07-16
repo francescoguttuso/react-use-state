@@ -7,7 +7,7 @@ export const App = () => {
   const [activeLanguage, setActiveLanguage] = useState(languages[0]);
 
   return (
-    <div className="container" style={{ padding: "20px" }}>
+    <div className="container">
       <h1>Learn Web development</h1>
       <div className="buttons-container">
         {languages.map((lang) => {
