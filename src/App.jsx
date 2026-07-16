@@ -1,10 +1,31 @@
 import { useState } from "react";
-import "./App.css";
+import { LanguageButton } from "./components/LanguageButton";
+import { LanguageCard } from "./components/LanguageCard";
+import { languages } from "./data/languages";
 
-function App() {
-  const [count, setCount] = useState(0);
+export const App = () => {
+  const [activeLanguage, setActiveLanguage] = useState(languages[0]);
 
-  return <>Works</>;
-}
+  return (
+    <div className="container" style={{ padding: "20px" }}>
+      <h1>Learn Web development</h1>
+      <div className="buttons-container">
+        {languages.map((lang) => {
+          return (
+            <LanguageButton
+              key={lang.id}
+              title={lang.title}
+
+              isActive={lang.id === activeLanguage.id}
+
+              onClickEvent={() => setActiveLanguage(lang)}
+            />
+          );
+        })}
+      </div>
+      <LanguageCard linguaggio={activeLanguage} />
+    </div>
+  );
+};
 
 export default App;
